@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf client && cd ../frontend && npm run build && mv dist client && cp -r client ../backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX"
+    "build:ui": "rm -rf client && cd ../frontend && rm -rf client && npm run build && mv dist client && cp -r client ../backend",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "keywords": [],
   "author": "Myo Ko Aung <komyo.asia021@gmail.com>",
