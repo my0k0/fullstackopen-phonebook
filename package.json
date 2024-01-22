@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "build:ui": "rm -rf client && cd ../frontend && rm -rf client && npm run build && mv dist client && cp -r client ../backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push -u origin"
   },
   "keywords": [],
   "author": "Myo Ko Aung <komyo.asia021@gmail.com>",
