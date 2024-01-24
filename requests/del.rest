@@ -1,2 +1,2 @@
 # Delete a person
-DELETE  http://localhost:3001/api/persons/1
+DELETE  http://localhost:3001/api/persons/65afeb0111f66341a054caa3

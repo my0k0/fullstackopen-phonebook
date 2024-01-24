@@ -6,15 +6,17 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf client && cd ../frontend && rm -rf client && npm run build && mv dist client && cp -r client ../backend",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push -u origin main"
+    "build:ui": "rm -rf client && cd ../frontend && npm run build && cp -r dist ../backend/client",
+    "deploy:full": "npm run build:ui && git add . && git commit -m 'added validation' && git push -u origin main"
   },
   "keywords": [],
   "author": "Myo Ko Aung <komyo.asia021@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
     "express": "^4.18.2",
+    "mongoose": "^8.1.0",
     "morgan": "^1.10.0"
   },
   "devDependencies": {

@@ -3,7 +3,7 @@ GET http://localhost:3001/api/persons
 
 ### 
 # Get Person Detail
-GET http://localhost:3001/api/persons/2
+GET http://localhost:3001/api/persons/648f3dc93bf48d9dffa1b3fb
 
 ###
 # Get info
